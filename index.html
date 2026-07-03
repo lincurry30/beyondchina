@@ -42,27 +42,8 @@ html{scroll-behavior:smooth}
 body{
   font-family: Arial, Helvetica, sans-serif;
   color:var(--ink);
-  background:
-    radial-gradient(ellipse at 18% 6%, rgba(143,185,178,.28), transparent 31%),
-    radial-gradient(ellipse at 76% 22%, rgba(111,165,143,.16), transparent 28%),
-    radial-gradient(ellipse at 42% 64%, rgba(216,197,158,.16), transparent 34%),
-    linear-gradient(180deg,#fbf8ee 0%,var(--paper) 40%,#edf4ef 100%);
+  background:linear-gradient(180deg,#fbf8ee 0%,var(--paper) 45%,#edf4ef 100%);
   line-height:1.58;
-}
-
-body:before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:100;
-  background-image:
-    repeating-linear-gradient(90deg, rgba(28,54,48,.015) 0 1px, transparent 1px 5px),
-    radial-gradient(circle at 50% 18%, transparent 0 38%, rgba(255,255,255,.26) 76%);
-  mix-blend-mode:multiply;opacity:.30;
-}
-
-body:after{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.42;
-  background:
-    radial-gradient(ellipse at 12% 78%, rgba(98,140,150,.14), transparent 34%),
-    radial-gradient(ellipse at 94% 72%, rgba(121,173,151,.13), transparent 30%);
 }
 
 h1,h2,h3,.serif{
@@ -81,8 +62,8 @@ a{color:inherit;text-decoration:none}
   justify-content:space-between;
   align-items:center;
   padding:18px 5.5vw;
-  background:linear-gradient(to bottom,rgba(251,248,238,.95),rgba(247,243,232,.78),transparent);
-  backdrop-filter: blur(8px);
+  background:linear-gradient(to bottom,rgba(251,248,238,.96),rgba(247,243,232,.82),transparent);
+  backdrop-filter: blur(6px);
 }
 
 .logo img{
@@ -90,7 +71,7 @@ a{color:inherit;text-decoration:none}
   height:auto;
   display:block;
   mix-blend-mode:multiply;
-  filter:contrast(1.12) grayscale(.1);
+  filter:contrast(1.05);
 }
 
 .navlinks{
@@ -155,7 +136,7 @@ section{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:saturate(.82) contrast(.82) brightness(1.18);
+  filter:none;
 }
 
 .hero:before{
@@ -164,10 +145,7 @@ section{
   inset:0;
   z-index:0;
   background:
-    linear-gradient(90deg,rgba(251,248,238,1) 0%,rgba(251,248,238,.92) 33%,rgba(247,243,232,.42) 63%,rgba(247,243,232,.08) 100%),
-    radial-gradient(ellipse at 64% 42%, rgba(127,176,169,.48), transparent 34%),
-    radial-gradient(ellipse at 81% 28%, rgba(151,187,198,.34), transparent 28%);
-  filter:saturate(.82) contrast(.82) brightness(1.18);
+    linear-gradient(90deg,rgba(251,248,238,1) 0%,rgba(251,248,238,.9) 32%,rgba(247,243,232,.36) 62%,rgba(247,243,232,.05) 100%);
 }
 
 .hero:after{
@@ -176,10 +154,7 @@ section{
   inset:0;
   z-index:1;
   pointer-events:none;
-  background:
-    radial-gradient(ellipse at 71% 47%, transparent 0 20%, rgba(235,245,240,.14) 38%, rgba(248,244,232,.74) 78%),
-    linear-gradient(180deg,transparent 0 70%,var(--paper) 100%),
-    linear-gradient(115deg,transparent 0 58%,rgba(111,165,143,.12) 74%,transparent 100%);
+  background:linear-gradient(180deg,transparent 0 78%,var(--paper) 100%);
 }
 
 .hero .hero-copy:after{
@@ -254,9 +229,9 @@ section{
   bottom:-22px;
   height:150px;
   background:url('images/ink-divider-landscape.jpg') center 52%/cover no-repeat;
-  filter:saturate(.75) contrast(.78) brightness(1.28);
-  opacity:.34;
-  mix-blend-mode:multiply;
+  opacity:.72;
+  filter:none;
+  mix-blend-mode:normal;
   mask-image:linear-gradient(90deg,transparent 0%,#000 18%,#000 82%,transparent 100%);
 }
 
@@ -265,7 +240,7 @@ section{
   grid-template-columns:1fr 1.1fr 1fr;
   gap:48px;
   align-items:center;
-  background:linear-gradient(180deg,rgba(255,252,244,.72),rgba(235,244,239,.54));
+  background:linear-gradient(180deg,rgba(255,252,244,.92),rgba(235,244,239,.82));
 }
 
 .philo-art{
@@ -281,16 +256,13 @@ section{
   position:absolute;
   inset:0;
   background:var(--img) center/cover no-repeat;
-  filter:saturate(.68) contrast(.78) brightness(1.20);
-  opacity:.54;
-  mix-blend-mode:multiply;
+  filter:none;
+  opacity:1;
+  mix-blend-mode:normal;
 }
 
 .philo-art:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:radial-gradient(ellipse at center,transparent 0 24%,rgba(248,245,237,.82) 78%);
+  display:none;
 }
 
 .center{
@@ -387,7 +359,7 @@ section{
 }
 
 .card{
-  background:rgba(252,249,241,.78);
+  background:rgba(252,249,241,.9);
   border:1px solid rgba(70,104,95,.18);
   min-height:450px;
   display:flex;
@@ -431,20 +403,15 @@ section{
 .card-img:before{
   content:"";
   position:absolute;
-  inset:-3px;
+  inset:0;
   background:var(--img) center/cover no-repeat;
-  filter:saturate(.72) contrast(.82) brightness(1.12);
-  opacity:.82;
-  mix-blend-mode:multiply;
+  filter:none;
+  opacity:1;
+  mix-blend-mode:normal;
 }
 
 .card-img:after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(ellipse at 50% 50%,transparent 0 28%,rgba(238,246,241,.18) 57%,rgba(248,244,232,.70) 100%),
-    linear-gradient(180deg,rgba(111,165,143,.10),transparent 55%,rgba(216,197,158,.10));
+  display:none;
 }
 
 .card-body{
@@ -513,16 +480,16 @@ section{
   position:absolute;
   inset:0;
   background:url('images/contact-town.jpeg') center/cover no-repeat;
-  filter:saturate(.75) contrast(.78) brightness(1.18);
-  opacity:.52;
-  mix-blend-mode:multiply;
+  filter:none;
+  opacity:1;
+  mix-blend-mode:normal;
 }
 
 .cta-ink:after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg,rgba(246,241,231,.10),#f4f3e7);
+  background:linear-gradient(90deg,rgba(246,241,231,.05),#f4f3e7);
 }
 
 .cta-copy{
@@ -655,17 +622,15 @@ section{
   position:absolute;
   inset:0;
   background:url('images/testimonial-town.jpg') center/cover no-repeat;
-  filter:saturate(.7) contrast(.85) brightness(.72);
-  opacity:.48;
+  filter:none;
+  opacity:.72;
 }
 
 .testimonial:after{
   content:"";
   position:absolute;
   inset:0;
-  background:
-    linear-gradient(90deg,#111c1a 0%,rgba(17,28,26,.82) 36%,rgba(17,28,26,.34) 100%),
-    radial-gradient(ellipse at 78% 32%,rgba(111,165,143,.22),transparent 38%);
+  background:linear-gradient(90deg,#111c1a 0%,rgba(17,28,26,.74) 36%,rgba(17,28,26,.22) 100%);
 }
 
 .testimonial-slider{
@@ -793,7 +758,7 @@ section{
 .footer img{
   width:86px;
   mix-blend-mode:multiply;
-  filter:grayscale(.12) contrast(1.1);
+  filter:contrast(1.05);
 }
 
 .footer-links{
@@ -844,34 +809,6 @@ section{
 
 .footer-email:hover{
   color:var(--seal);
-}
-
-.ideas:before,.two-cols:before{
-  content:"";
-  position:absolute;
-  left:0;right:0;top:0;
-  height:190px;
-  pointer-events:none;
-  opacity:.38;
-  background:
-    radial-gradient(ellipse at 18% 76%, rgba(111,165,143,.32), transparent 32%),
-    radial-gradient(ellipse at 34% 88%, rgba(123,147,160,.28), transparent 26%),
-    radial-gradient(ellipse at 55% 74%, rgba(143,185,178,.24), transparent 30%),
-    radial-gradient(ellipse at 76% 88%, rgba(216,197,158,.22), transparent 28%);
-  filter:blur(2px);
-}
-
-.card:nth-child(1),.card:nth-child(3),.card:nth-child(8){
-  background:linear-gradient(180deg,rgba(252,249,241,.86),rgba(231,243,235,.68));
-}
-.card:nth-child(2),.card:nth-child(6){
-  background:linear-gradient(180deg,rgba(252,249,241,.86),rgba(230,237,240,.68));
-}
-.card:nth-child(4){
-  background:linear-gradient(180deg,rgba(252,249,241,.86),rgba(246,234,204,.68));
-}
-.card:nth-child(5),.card:nth-child(7){
-  background:linear-gradient(180deg,rgba(252,249,241,.86),rgba(238,242,224,.68));
 }
 
 @media(max-width:1040px){
