@@ -295,34 +295,38 @@ section{
 
 .center{
   text-align:center;
-  max-width:820px;
+  max-width:1020px;
   margin:0 auto;
 }
 
 .center h2{
-  font-size:46px;
-  margin-bottom:16px;
+  font-size:68px;
+  line-height:1.05;
+  margin-bottom:24px;
 }
 
 .philo-seal{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:42px;
-  height:42px;
-  border:2px solid var(--seal);
+  width:28px;
+  height:28px;
+  border:1.5px solid var(--seal);
   color:var(--seal);
-  font-size:28px;
+  font-size:14px;
   font-weight:700;
   font-family:Georgia,serif;
-  margin-left:14px;
+  margin-left:10px;
   vertical-align:middle;
-  transform:translateY(6px);
+  transform:translateY(3px);
 }
 
 .center p{
   color:#5e594f;
-  font-size:16px;
+  font-size:18px;
+  line-height:1.65;
+  max-width:920px;
+  margin:0 auto;
 }
 
 .ideas{
@@ -330,19 +334,50 @@ section{
 }
 
 .ideas-intro{
-  max-width:780px;
-  margin:0 auto 42px;
+  max-width:1180px;
+  margin:0 auto 46px;
   text-align:center;
 }
 
-.ideas-intro h2{
-  font-size:50px;
-  margin-bottom:15px;
-  text-transform:none;
+.ideas-intro .kicker{
+  margin-bottom:22px;
+}
+
+.ideas-headline{
+  display:inline-flex;
+  align-items:flex-end;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:24px;
+}
+
+.ideas-headline h2{
+  font-size:68px;
+  line-height:1.05;
+  color:#1f2b28;
+}
+
+.ideas-seal{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:28px;
+  height:28px;
+  border:1.5px solid var(--seal);
+  color:var(--seal);
+  font-size:14px;
+  font-weight:700;
+  font-family:Georgia,serif;
+  transform:translateY(-2px);
 }
 
 .ideas-intro p{
   color:#605a51;
+  font-size:16px;
+  line-height:1.6;
+  max-width:980px;
+  margin:0 auto;
 }
 
 .grid{
@@ -545,20 +580,6 @@ section{
   line-height:1.48;
 }
 
-.panel-seal{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:28px;
-  height:28px;
-  border:1.5px solid var(--seal);
-  color:var(--seal);
-  font-size:15px;
-  font-weight:700;
-  font-family:Georgia,serif;
-  margin:0 auto 32px;
-}
-
 .inline-seal{
   display:inline-flex;
   align-items:center;
@@ -572,6 +593,8 @@ section{
   font-family:Georgia,serif;
   margin-left:10px;
   vertical-align:middle;
+  transform:translateY(-2px);
+  letter-spacing:0;
 }
 
 .mini-icons{
@@ -891,13 +914,12 @@ section{
   .grid{grid-template-columns:1fr}
   .mini-icons{grid-template-columns:repeat(2,1fr)}
   .footer-links{grid-template-columns:1fr}
-  .center h2,.ideas-intro h2{font-size:35px}
-  .philo-seal{
-    width:34px;
-    height:34px;
-    font-size:22px;
-    margin-left:10px;
-    transform:translateY(4px);
+  .center h2,.ideas-headline h2{font-size:40px}
+  .philo-seal,
+  .ideas-seal{
+    width:24px;
+    height:24px;
+    font-size:12px;
   }
   .panel h2{font-size:34px}
   .panel p{font-size:16px}
@@ -961,9 +983,14 @@ section{
 
   <section id="ideas" class="ideas">
     <div class="ideas-intro">
-      <div class="kicker">Ideas, not packages</div>
-      <h2>Starting Points, Not Packages</h2>
-      <p>These are not fixed products. Each idea is designed from 7 days onward and can be extended, combined or slowed down according to the traveller’s pace, season, comfort level and sense of curiosity.</p>
+      <div class="kicker">Starting Points, Not Packages</div>
+
+      <div class="ideas-headline">
+        <h2>Ideas rich enough to begin with.</h2>
+        <span class="ideas-seal">游</span>
+      </div>
+
+      <p>These are conversation starters, not fixed products. Each idea can be reshaped by season, audience profile, travel style, budget and purpose.</p>
     </div>
 
     <div class="grid">
@@ -1125,8 +1152,7 @@ section{
   <section id="create" class="two-cols">
     <div class="panel">
       <div class="kicker">What We Create</div>
-      <h2>Private journeys with depth and elegance.</h2>
-      <div class="panel-seal">雅</div>
+      <h2>Private journeys with depth and elegance.<span class="inline-seal">雅</span></h2>
       <p>Bespoke leisure experiences designed around the traveller rather than around a pre-made itinerary.</p>
 
       <div class="mini-icons">
