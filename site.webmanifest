@@ -1,20 +1,15 @@
 {
-  "name": "Curio by New Imagination DMC China",
-  "short_name": "Curio",
-  "description": "Fun social travel experiences in China.",
-  "start_url": "https://curio-china.com/",
-  "scope": "https://curio-china.com/",
+  "name": "Beyond by New Imagination DMC China",
+  "short_name": "Beyond",
+  "description": "Private luxury travel experiences in China by New Imagination DMC China.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#fffaf1",
-  "theme_color": "#ff3aa6",
+  "background_color": "#f7f3e8",
+  "theme_color": "#f7f3e8",
   "icons": [
     {
-      "src": "images/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "images/android-chrome-512x512.png",
+      "src": "/images/favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
