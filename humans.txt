@@ -1,9 +1,17 @@
 /* TEAM */
-Brand: Curio by New Imagination DMC China
-Website: https://curio-china.com/
-Contact: info@newimaginationdmc.com
+
+Brand: Beyond by New Imagination DMC China
+Parent Company: New Imagination DMC China
+Website: https://www.beyond-china.com/
+Contact: info@beyond-china.com
 
 /* SITE */
+
+Type: One-page brand website
+Focus: Private luxury travel in China
 Language: English
-Category: Social travel experiences in China
-Purpose: A colorful, people-first travel brand for travelers seeking fun, connection, communities, and shared interests in China.
+Design Direction: Modern Chinese watercolor-inspired luxury travel aesthetic
+
+/* THANKS */
+
+Created for travel advisors, luxury agencies, private client offices and partners exploring a more unexpected side of China.
